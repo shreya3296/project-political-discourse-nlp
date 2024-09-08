@@ -21,16 +21,26 @@ Our project combines **Exploratory Data Analysis (EDA)** and **advanced machine 
     - We conducted a **trend analysis** on parliamentary questions over time to detect shifts in focus across different periods. The data was broken down by ministry, party affiliations, and key policy topics.
     - A **keyword analysis** was performed on the text corpus to identify frequently recurring terms in each medium. We also used term-frequency inverse document frequency (TF-IDF) to understand the importance of specific terms.
     - **Outlier analysis** was performed to detect extreme values, particularly for certain years where the number of questions, topics, or mentions of certain issues spiked dramatically.
-  
+  <img width="412" alt="Screenshot 2024-09-08 at 11 59 04 PM" src="https://github.com/user-attachments/assets/cea9cf64-02a4-40de-a516-b20502c1ce3a">
+
 - **Thematic Modeling**:
     - **Latent Dirichlet Allocation (LDA)** was used to extract themes from the parliamentary questions dataset. The model helped uncover hidden topics such as healthcare, infrastructure, education, and defense, and their evolution over time.
     - **Topic coherence scores** were used to assess the quality of the topics generated, ensuring that each topic was distinct and meaningful.
     - We applied **BERT embeddings** to capture the semantic meaning of the text across the tweets and speeches, ensuring a deep understanding of the context behind political discourse.
+<img width="347" alt="Screenshot 2024-09-08 at 11 59 57 PM" src="https://github.com/user-attachments/assets/c3434761-d7ac-4fbf-a7ca-cc2001d901c0">
+
+<img width="359" alt="Screenshot 2024-09-09 at 12 00 03 AM" src="https://github.com/user-attachments/assets/5aaf19dc-b09c-4663-96d7-bb2d896028e2">
 
 - **Sentiment Analysis**:
+
+<img width="435" alt="Screenshot 2024-09-09 at 12 01 31 AM" src="https://github.com/user-attachments/assets/1d424da8-9972-4610-b270-66df0dc0555b">
+    
     - We used **TextBlob** for a basic sentiment polarity analysis to classify each entry into positive, negative, or neutral sentiment categories. This helped identify whether public discourse (tweets and speeches) is generally optimistic, pessimistic, or neutral.
     - We extended this by using **BERT-based sentiment classification** to refine the sentiment categorization, offering a more nuanced and context-aware analysis, particularly for politically charged texts such as parliamentary debates.
   
+<img width="416" alt="Screenshot 2024-09-09 at 12 01 43 AM" src="https://github.com/user-attachments/assets/2703494e-ad49-40ee-87ef-e222bbeb6b37">
+
+
 - **Classification Models**:
     - **BERT (Bidirectional Encoder Representations from Transformers)** was used to classify tweets and parliamentary questions as being either affiliated with BJP or not. The model was fine-tuned to ensure high accuracy, and it achieved around 73% accuracy in classifying political content.
     - **Prime Minister Modi's speeches** were similarly classified, providing insights into how closely aligned his public communications are with his party's broader strategy.
@@ -43,6 +53,8 @@ Our project combines **Exploratory Data Analysis (EDA)** and **advanced machine 
 - **Visualization**:
     - We visualized the distribution of topics and sentiment over time, creating **word clouds**, **bar charts**, and **line graphs** to display trends. Interactive dashboards were built to allow deeper exploration of the data.
     - **Feature importance plots** from tree-based models such as Random Forest were used to enhance the interpretability of the classification results, allowing us to understand which features (terms, keywords, ministries, etc.) were most influential in predicting party affiliation.
+  
+ <img width="581" alt="Screenshot 2024-09-09 at 12 04 50 AM" src="https://github.com/user-attachments/assets/457e797e-3046-431e-9558-94df767553e1">
 
 ### **Key Findings**
 - **Thematic Analysis**: Parliamentary questions were dominated by domestic concerns such as healthcare, education, and infrastructure, but global issues such as defense and trade have seen a rise in recent years.
